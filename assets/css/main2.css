@@ -80,7 +80,12 @@ html, body{
     padding: 5px 15px;    
 }
 
+.social-container i{
+    transition: .4s;
+}
+
 .social-container i:hover {
     color: #fff;
+    font-size: 35px;
 }
 
