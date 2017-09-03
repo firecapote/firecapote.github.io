@@ -75,11 +75,12 @@ html, body{
 }
 
 .social-container a{
-    color: #fff;
+    color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
     padding: 5px 15px;    
 }
 
-.social-container i {
+.social-container i:hover {
+    color: #fff;
 }
 
