@@ -2,3 +2,60 @@ body {
     background: pink;
     font-size: 18px;
 }
+
+.container-menu {
+    width: 40%;
+}
+
+.container-menu a {
+    color: initial;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: .1s;
+}
+
+.container-menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-menu li {
+    border: 1px solid black;
+    position: relative;
+}
+
+.container-menu li:hover a{
+    padding: 10px 20px;
+}
+
+ul.dropdown {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100%;
+    flex-direction: column;    
+    visibility: hidden;
+    opacity: 0;
+    transition: 1.2s;
+}
+
+ul.dropdown li {
+    padding: 0px;
+    height: 0;
+    background-color: rgba(232, 213, 124, 0.9);
+    transition: 2s;
+}
+
+.container-menu li:hover .dropdown{
+    visibility: visible;
+    opacity: 1;
+}
+
+.container-menu li:hover ul.dropdown li {
+    padding: 10px;
+    height: 100%;
+}

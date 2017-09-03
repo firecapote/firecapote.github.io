@@ -1,0 +1,85 @@
+html, body{
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.left-col {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    background-color: #222629;
+}
+
+.container-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.container-img h3, .container-img p {
+    text-align: right;
+    color: #fff;
+}
+
+.container-img h3 {
+    font-size: 18px;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+.container-img p {
+    font-size: 80%;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.container-menu li {
+    transition: .1s;
+}
+
+.container-menu li i {
+    color: #fff;
+}
+
+.container-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;    
+    cursor: pointer;
+}
+
+.container-menu li:hover {
+    background-color: rgba(15, 15, 15, 0.8)
+}
+
+
+.social-container {
+    position: absolute;
+    width: 100%;    
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-container a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;    
+}
+
+.social-container i {
+}
+
